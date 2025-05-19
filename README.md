@@ -22,7 +22,7 @@ Changes the following Settings/Parameters in the **config.plist**:
 	- `Misc/Security/SecureBootModel` = `Disabled` &rarr; :warning: Disables Apple Secure Boot hardware model to avoid issues during Installation. Re-enable it in Post-Install so System Updates work when using an SMBIOS of a Mac model with a T2 Security Chip!
 	- `Misc/Security/Vault` = `Optional` &rarr; Has to be created on the target system itself!
 - **Other Settings**:
-	- Changes `Boter/Quirks/ResizeAppleGpuBars` to `-1` &rarr; Disables Resizable BAR in macOS. Just in case the next user's GPU doesn't support it or it is disabled in BIOS.
+	- Changes `Booter/Quirks/ResizeAppleGpuBars` to `-1` &rarr; Disables Resizable BAR in macOS. Just in case the next user's GPU doesn't support it or it is disabled in BIOS.
 	- Changes `UEFI/Quirks/ResizeGpuBars` to `-1` &rarr; Disables Resizable BAR in UEFI for the same reason.
 	- Changes `Misc/Boot/LauncherOption` to `Disabled` &rarr; To avoid changing boot menu entries on the target system's Firmware/BIOS.
 	- Removes custom entries from `Misc/BlessOverride` &rarr; These overrides have to be created on the target system.
